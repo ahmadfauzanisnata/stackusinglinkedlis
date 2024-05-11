@@ -21,7 +21,6 @@ class stack {
     stack(){
         top = NULL; //initialize the stack with a null top pointer
     }
-
     // push operatiom: insert an element onto the  top of the stack
     int push(int value) {
         Node* newNode = new Node(); // 1. allocate memory for the new node
@@ -32,8 +31,15 @@ class stack {
         return value;
     }
 
+    // pop operation: Remove the topmost element from the stack
+    void pop(){
+        if (isEmpty()){
+            cout << "stack is empty." << endl;
+        }
+        cout << "Popped value: " << top->data << endl;
+    }
 
-   
 
-}
+
+};
  
