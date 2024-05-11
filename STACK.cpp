@@ -56,7 +56,10 @@ class stack {
        
     }
 
-    //
+    //isEmpty operation: check if the stack is empty
+    bool isEmpty(){
+        
+    }
 
 };
  
