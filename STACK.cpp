@@ -28,6 +28,8 @@ class stack {
         newNode->data = value; // 2. assign value
         newNode->next = top; // 3. set the next pointer of the new node to the current top node
         top = newNode; // 4. update the top poinnter to the  new node
+        cout << "push value: " << value << endl;
+        return value;
     }
 
 
