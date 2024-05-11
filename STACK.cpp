@@ -42,13 +42,19 @@ class stack {
 
     // peek/top operation: retrieve the value of the topmost element without removing it
     void peek(){
-        if (isEmpty()) {
-            cout << "Stack is empty." << endl;
+        if (top == NULL) {
+            cout << "List is empty." << endl;
         }
-        cout << "Popped value: " << top->data << endl;
+        else {
+            Node* current = top;
+            while (current != NULL) {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+           
+        }
+       
     }
-
-
 
 };
  
